@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Chat IA - Archivo de emergencias</title>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="brand">Archivo de emergencias</div>
+      <nav class="site-nav" aria-label="Navegacion principal">
+        <a href="index.html#overview">Archivo</a>
+        <a href="ai-chat.html">Chat IA</a>
+        <a href="../index.html">Idioma</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="section-head">
+          <p class="section-label">Seccion</p>
+          <h1>Chat IA (Ollama)</h1>
+        </div>
+        <div class="chat">
+          <div id="chat-log" class="chat-log" aria-live="polite"></div>
+          <form id="chat-form" class="chat-form" autocomplete="off">
+            <div class="chat-field">
+              <label class="chat-label" for="prompt">Mensaje</label>
+              <textarea id="prompt" name="prompt" rows="3" placeholder="Escribe tu mensaje..."></textarea>
+            </div>
+            <div class="button-row">
+              <button type="submit" class="button">Enviar</button>
+              <button type="button" id="voice-btn" class="button">Voz</button>
+              <button type="button" id="clear-chat" class="button">Limpiar</button>
+            </div>
+            <div id="voice-status" class="voice-status" aria-live="polite"></div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <script src="../script.js"></script>
+  </body>
+</html>

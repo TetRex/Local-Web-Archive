@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AI-chat - Hata-arkisto</title>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="brand">Hata-arkisto</div>
+      <nav class="site-nav" aria-label="Paanavigointi">
+        <a href="index.html#overview">Arkisto</a>
+        <a href="ai-chat.html">AI-chat</a>
+        <a href="../index.html">Kieli</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="section-head">
+          <p class="section-label">Osio</p>
+          <h1>AI-chat (Ollama)</h1>
+        </div>
+        <div class="chat">
+          <div id="chat-log" class="chat-log" aria-live="polite"></div>
+          <form id="chat-form" class="chat-form" autocomplete="off">
+            <div class="chat-field">
+              <label class="chat-label" for="prompt">Viesti</label>
+              <textarea id="prompt" name="prompt" rows="3" placeholder="Kirjoita viesti..."></textarea>
+            </div>
+            <div class="button-row">
+              <button type="submit" class="button">Laheta</button>
+              <button type="button" id="voice-btn" class="button">Aani</button>
+              <button type="button" id="clear-chat" class="button">Tyhjenna</button>
+            </div>
+            <div id="voice-status" class="voice-status" aria-live="polite"></div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <script src="../script.js"></script>
+  </body>
+</html>
